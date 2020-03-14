@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Feedback Page</title>
+ <style>
+            body
+            {
+                background-color:#FFAACC;
+            }
+            h1
+            {
+                color:#770080;
+                font-style:italic;
+                font-family:courier New;
+                text-align:center;
+            }
+            #result
+            {
+                text-align: center;
+                color:#770080;
+                font-weight:bold;
+            }
+        </style>
+</head>
+<body>
+ 	<h1>College Training Feedback Form</h1>
+	<form onsubmit="return feedback()">
+	<table align="center">
+		 <tr>	 
+		 		 <td><label for="participantName">Participant Name</label></td>
+    	 		 <td><input type="text" name="participantName" id="participantName" placeholder="Enter your Name"required/></td>
+    	 </tr>
+    	 
+    	  <tr>	
+    	  		 <td><label for="collegeName">College Name</label></td>
+    	 		 <td> <input type="text" name="collegeName" id="collegeName" required/></td>
+    	  </tr>
+    	  
+    	  <tr>	 <td><label for="participantAddress">Participant Address</label></td>
+    	  		 <td> <textarea rows="5" cols="20" name="participantAddress" placeholder="Enter your Address here.."></textarea></td>
+    	  </tr>
+    	 
+    	  <tr>
+    	         <td><label for="gender">Gender</label></td>
+        		 <td> <input type="radio" name="gender" id="Female" required/>Female
+        		  <input type="radio" name="gender" id="Male" required/>Male</td>
+          </tr>
+    	 
+    	  <tr>
+    	  		<td><label for="email">EmailID</label></td>
+    	 		<td>  <input type="email" name="email" id="email" required/></td>
+    	  </tr>
+    	 
+    	  <tr>
+    	  		 <td><label for="mobileNumber">Mobile Number</label></td>
+    	 		 <td> <input type="tel" name="mobileNumber" id="mobileNumber" required/></td>
+    	  </tr>
+    	 
+    	  <tr>
+    	  		 <td><label for="trainerName">Trainer's Name</label></td>
+    	 		 <td> <input type="text" name="trainerName" id="trainerName" required/></td>
+    	  </tr>
+    	 
+    	  <tr>
+    	  <td><label for="courseName">Course Name</label></td>
+    	  		 <td> <input type="text" name="courseName" id="courseName" required/></td></tr>
+    	 
+    	  <tr>
+    	  		 <td><label for="dateofcompletion">Course completion Date</label></td>
+    	 		 <td> <input type="date" name="dateofcompletion" id="dateofcompletion" required/></td>
+    	  </tr>
+    	 
+    	  <tr>
+    	  		 <td><label for="trainerFeedback">Trainer's Feedback</label></td>
+    	 		 <td><input type="text" name="trainerFeedback"  list="feedback" autocomplete="on" required>
+  					<datalist id="feedback">
+   					 <option value="Excellent"/>
+   					 <option value="Ver Good"/>
+   					 <option value="Good"/>
+   					 <option value="Average"/>
+    				 <option value="Below Average"/>
+  				  </datalist></td>
+  		 </tr>
+  				
+  				 <tr><td><input type="submit" name="submit" value="Submit Feedback" onclick="return feedback()"></td>
+            	 <td><input type="reset" name="Reset" value="Clear"></td></tr>
+    	 
+    	</table> 
+	</form>
+	 <div id="result"></div>
+        <script type="text/javascript">
+               
+               function feedback()
+               {
+                   var feedback = document.getElementById("feedback").value;
+                   var trainer = document.getElementById("tname").value;
+                   var feedbackrate="";
+                   var participant = document.getElementById("pname").value;
+                   
+                   if(feedback == "Excellent")
+                   {
+                       feedbackrate = 5;
+                   }else if(feedback == "Very Good"){
+                       feedbackrate = 4;
+                   }else if(feedback == "Good"){
+                       feedbackrate = 3;
+                   }else if(feedback == "Average"){
+                       feedbackrate = 2;
+                   }else if(feedback == "Below Average"){
+                       feedbackrate = 1;
+                   }else{
+                       feedbackrate = 0;
+                   }
+                   document.getElementById("result").innerHTML = "Feedback rating of "+trainer+" is "+feedbackrate+"/5. Given by participant-"+participant;
+                   return false;
+               }
+
+        </script>
+</body>
+</html>

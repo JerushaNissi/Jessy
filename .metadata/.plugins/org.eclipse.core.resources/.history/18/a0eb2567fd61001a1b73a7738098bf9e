@@ -1,0 +1,10 @@
+
+public class Test {
+public static void main(String[] arguments) {
+	amethod(arguments);
+}
+public void amethod(String[] arguments) {
+	System.out.println(arguments[0]);
+	System.out.println(arguments[1]);
+}
+}

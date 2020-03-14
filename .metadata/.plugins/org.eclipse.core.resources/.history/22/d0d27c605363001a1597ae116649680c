@@ -1,0 +1,13 @@
+package UnitTesting;
+
+import org.junit.runner.JUnitCore;
+import junit.framework.TestSuite;
+
+public class TestMain {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		JUnitCore.runClasses(TestSuite.class);
+	}
+
+}

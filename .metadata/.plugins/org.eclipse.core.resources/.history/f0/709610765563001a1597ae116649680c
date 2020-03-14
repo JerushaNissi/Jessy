@@ -1,0 +1,26 @@
+package UnitTesting;
+
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Nested;
+import org.junit.jupiter.api.Test;
+
+public class Assertion {
+
+	@Test
+	public void test4()
+	{
+		String str=null;
+		Assertions.assertEquals("String","String");
+	}
+	
+	@Nested
+	class NestedClass
+	{
+		@Test
+		public void test5()
+		{
+				System.out.println("Nested Class........");
+		}
+	}
+
+}

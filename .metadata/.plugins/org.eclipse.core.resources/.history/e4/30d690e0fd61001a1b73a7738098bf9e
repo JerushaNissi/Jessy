@@ -1,0 +1,9 @@
+public class ET{
+	class TE extends Exception{
+		
+	}
+	public void runTest() throws TE{}
+	public void test()
+{
+		run Test();
+		}}

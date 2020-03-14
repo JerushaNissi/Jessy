@@ -1,0 +1,36 @@
+package UnitTesting;
+import org.junit.jupiter.api.*;
+
+public class Test1 {
+	@BeforeAll
+	//it executes before beginning of test case
+	public  static void beforeClass() {
+		System.out.println("This method executes before begining of class");
+	}
+	@AfterAll
+	//it executes after end of all test cases
+	public static  void afterClass() {
+		System.out.println("This method executes after ending of class");
+	}
+	@Test//the method that is to be tested must be notified as @test annotation
+	public void test1() {
+		System.out.println("This is my test case 1");
+	}
+	@BeforeEach
+	//this method executes before and every test than any other method during execution
+	public void displayBefore() {
+		System.out.println("It executes before any test case...");
+	}
+	@Test
+	public void test2() {
+		System.out.println("This is my test case 2");
+	}
+	@AfterEach
+	//this method executes after and every test than any other method during execution
+	public void displayAftrer() {
+		System.out.println("It executes after any test case...");
+	}
+}
+/*Methods under test annotation are executed based on
+1.order in which they are written..to give method ordering we can give an annotation 
+*/

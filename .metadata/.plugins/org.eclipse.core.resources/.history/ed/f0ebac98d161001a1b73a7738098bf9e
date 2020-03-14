@@ -1,0 +1,14 @@
+package UnitTesting;
+
+import org.junit.jupiter.api.Test;
+
+public class Test1 {
+	@Test//the method that is to be tested must be notified as @test annotation
+	public void test1() {
+		System.out.println("This is my test case 1");
+	}
+	@Test
+	public void test2() {
+		System.out.println("This is my test case 2");
+	}
+}

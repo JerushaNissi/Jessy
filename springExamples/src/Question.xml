@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+<!-- 
+  <bean id="q1" class="prg3.QuestionBank">
+   		<constructor-arg value="111"/>
+   		<constructor-arg value="What is Java..?"/>
+   		<constructor-arg>
+			<list>  
+				<value>Java is a programming language</value>  
+				<value>Java is a Platform</value>  
+				<value>Java is an Island of IndonAsia</value>  
+			</list>  
+		</constructor-arg> 
+   </bean>
+ 
+  
+<bean id="qm" class="prg3.QBMap">  
+		<constructor-arg value="11"></constructor-arg>  
+		<constructor-arg value="What is Java?"></constructor-arg>  
+		<constructor-arg>  
+			<map>  
+				<entry key="Java is a Programming Language"  value="Ajay Kumar"></entry>  
+				<entry key="Java is a Platform" value="John Smith"></entry>  
+				<entry key="Java is an Island" value="Raj Kumar"></entry>  
+			</map>  
+		</constructor-arg>  
+</bean>  
+
+<bean id="setex" class="prg3.SetterEx">  
+		<property name="id"><value>20</value></property>  
+		<property name="name">  <value>Arun</value></property>  
+		<property name="city"><value>Ghaziabad</value></property>    
+</bean>		
+		
+
+<bean id="setex1" class="prg3.SetterEx"> 
+		<property name="id" value="27"/>
+		<property name="name" value="Jerusha Nissi Mane"/>
+   		<property name="city" value="Java"/>
+</bean>  
+
+
+<bean id="baseEmp" class="prg1.Employee">  
+		<property name="company" value="Cognizant"/>  
+</bean>	
+
+<bean id="derivedEmp" parent="baseEmp"> 
+		<property name="empid" value="27"/>
+		<property name="name" value="Jerusha Nissi Mane"/>
+</bean>  -->
+
+<bean id="qm" class="prg3.QBMap">  
+		<constructor-arg value="11"></constructor-arg>  
+		<constructor-arg value="What is Java?"></constructor-arg>  
+		<constructor-arg>  
+			<map>  
+				<entry key="Java is a Programming Language"  value="Ajay Kumar"></entry>  
+				<entry key="Java is a Platform" value="John Smith"></entry>  
+				<entry key="Java is an Island" value="Raj Kumar"></entry>  
+			</map>  
+		</constructor-arg>  
+</bean>  
+   
+</beans>

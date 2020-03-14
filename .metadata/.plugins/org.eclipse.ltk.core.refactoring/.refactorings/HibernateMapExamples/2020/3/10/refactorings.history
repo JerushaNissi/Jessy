@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;HibernateMapExamples/src/cart.cfg.xml&apos; to &apos;cart.hbm.xml&apos;" description="Rename resource &apos;cart.cfg.xml&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/cart.cfg.xml" name="cart.hbm.xml" stamp="1583133171871" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;HibernateMapExamples/src/items.cfg.xml&apos; to &apos;items.hbm.xml&apos;" description="Rename resource &apos;items.cfg.xml&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/items.cfg.xml" name="items.hbm.xml" stamp="1583133181163" updateReferences="true"/>
+</session>
